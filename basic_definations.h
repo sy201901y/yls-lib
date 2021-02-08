@@ -11,57 +11,19 @@
 #define int long long
 #define pq<T> priority_queue<T,vector<T>,less<T> >
 #define qp<T> priority_queue<T,vector<T>,greater<T> >
-#ifndef Luogu
-#define _CRT_SECURE_NO_WARNINGS
-#pragma GCC optimize(2)
-#pragma GCC optimize(3)
-#pragma GCC optimize("Ofast")
-#pragma GCC optimize("inline")
-#pragma GCC optimize("-fgcse")
-#pragma GCC optimize("-fgcse-lm")
-#pragma GCC optimize("-fipa-sra")
-#pragma GCC optimize("-ftree-pre")
-#pragma GCC optimize("-ftree-vrp")
-#pragma GCC optimize("-fpeephole2")
-#pragma GCC optimize("-ffast-math")
-#pragma GCC optimize("-fsched-spec")
-#pragma GCC optimize("unroll-loops")
-#pragma GCC optimize("-falign-jumps")
-#pragma GCC optimize("-falign-loops")
-#pragma GCC optimize("-falign-labels")
-#pragma GCC optimize("-fdevirtualize")
-#pragma GCC optimize("-fcaller-saves")
-#pragma GCC optimize("-fcrossjumping")
-#pragma GCC optimize("-fthread-jumps")
-#pragma GCC optimize("-funroll-loops")
-#pragma GCC optimize("-fwhole-program")
-#pragma GCC optimize("-freorder-blocks")
-#pragma GCC optimize("-fschedule-insns")
-#pragma GCC optimize("inline-functions")
-#pragma GCC optimize("-ftree-tail-merge")
-#pragma GCC optimize("-fschedule-insns2")
-#pragma GCC optimize("-fstrict-aliasing")
-#pragma GCC optimize("-fstrict-overflow")
-#pragma GCC optimize("-falign-functions")
-#pragma GCC optimize("-fcse-skip-blocks")
-#pragma GCC optimize("-fcse-follow-jumps")
-#pragma GCC optimize("-fsched-interblock")
-#pragma GCC optimize("-fpartial-inlining")
-#pragma GCC optimize("no-stack-protector")
-#pragma GCC optimize("-freorder-functions")
-#pragma GCC optimize("-findirect-inlining")
-#pragma GCC optimize("-fhoist-adjacent-loads")
-#pragma GCC optimize("-frerun-cse-after-loop")
-#pragma GCC optimize("inline-small-functions")
-#pragma GCC optimize("-finline-small-functions")
-#pragma GCC optimize("-ftree-switch-conversion")
-#pragma GCC optimize("-foptimize-sibling-calls")
-#pragma GCC optimize("-fexpensive-optimizations")
-#pragma GCC optimize("-funsafe-loop-optimizations")
-#pragma GCC optimize("inline-functions-called-once")
-#pragma GCC optimize("-fdelete-null-pointer-checks")
+#define Madoka(x) memset(x,0,sizeof(x))
+#define Madmad(x,y) memcpy(x,y,sizeof(x))
+#define Madoka_neg_inf(x) memset(x,128,sizeof(x))
+#define Madoka_neg_one(x) memset(x,255,sizeof(x))
+#define Madoka_inf(x) memset(x,127,sizeof(x))
+#define Madoka_add_inf(x) memset(x,63,sizeof(x))
+#define pos_inf 0x7fffffff
+#define pos_set_inf 0x7f7f7f7f
+#define add_inf 0x3fffffff
+#define add_set_inf 0x3f3f3f3f
+#define neg_inf 0x80000000
+#define neg_set_inf 0x80808080
 #endif
-
 #else
 #error SYONE_LIB not defined
 #endif
