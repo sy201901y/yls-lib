@@ -24,6 +24,8 @@
 #define add_set_inf 0x3f3f3f3f
 #define neg_inf 0x80000000
 #define neg_set_inf 0x80808080
+#define For(i,l,r) for(int i=l;i<=r;i++)
+#define roF(i,l,r) for(int i=r;i>=l;i--)
 #endif
 #else
 #error SYONE_LIB not defined
