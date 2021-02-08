@@ -2,7 +2,7 @@
 #include<algorithm>
 #include<iostream>
 #include<cstring>
-#incldue<cstdio>
+#include<cstdio>
 #include<string>
 #include<queue>
 #include<stack>
