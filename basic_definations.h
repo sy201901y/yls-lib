@@ -1,4 +1,3 @@
-#ifdef SYONE_LIB
 #include<algorithm>
 #include<iostream>
 #include<cstring>
@@ -26,7 +25,7 @@
 #define neg_set_inf 0x80808080
 #define For(i,l,r) for(int i=l;i<=r;i++)
 #define roF(i,l,r) for(int i=r;i>=l;i--)
-#endif
-#else
-#error SYONE_LIB not defined
+#ifdef INCLUDE_LIB
+#include "algo/bfs.h"
+#include "basics/input.h"
 #endif
