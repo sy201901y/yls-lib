@@ -29,5 +29,7 @@
 #define roF(i,l,r) for(int i=r;i>=l;i--)
 #include "algo/bfs.h"
 #include "basics/input.h"
+#ifdef BINARY
+#include "DS/bitcompress.h"
 #endif
 #endif
