@@ -2,7 +2,7 @@
 #ifndef RANGE
 #define RANGE
 #ifndef ONLINE_JUDGE
-#include <../traits/issame.h>
+#include "../traits/issame.h"
 #else
 namespace syone
 {
