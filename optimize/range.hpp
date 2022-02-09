@@ -1,3 +1,4 @@
+#ifdef SYONE_LIB
 #ifndef RANGE
 #define RANGE
 #ifndef ONLINE_JUDGE
@@ -50,4 +51,5 @@ namespace syone
 		return range_helper<Cont,numberlist>::range(nums);
 	}
 }
+#endif
 #endif
