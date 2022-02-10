@@ -1,4 +1,4 @@
-# syone-lib-cppjy
+# Eclipse_lib
 
 This repository contains my personal templates and libs.
 
