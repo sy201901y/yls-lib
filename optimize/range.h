@@ -25,31 +25,20 @@ namespace syone
 		return ret;
 	}
 	template<typename Cont=std::vector<int>,typename numberlist=std::vector<int>,bool=issame<Cont,numberlist>::value>
-	class range_helper;
+	Cont range_with_numbers(numberlist);
 	template<typename Cont,typename numberlist>
-	class range_helper<Cont,numberlist,1>
+	Cont range_with_numbers<Con,numberlist,1>(numberlist nums)
 	{
-		Cont range(numberlist nums)
+		Cont ret=new Cont();
+		while(!nums.empty())
 		{
-			Cont ret=new Cont();
-			while(!nums.empty())
-			{
-				int Num=nums[nums.size()-1];
-				ret.push_front(Num);
-			}
-			return ret;
+			int Num=nums[nums.size()-1];
+			ret.push_front(Num);
 		}
-	};
-	template<typename Cont,typename numberlist>
-	class range_helper<Cont,numberlist,0>
-	{
-		Cont range(numberlist nums){return nums;}
-	};
-	template<typename Cont=std::vector<int>,typename numberlist=std::vector<int> >
-	Cont range_with_numbers(numberlist nums)
-	{
-		return range_helper<Cont,numberlist>::range(nums);
+		return ret;
 	}
+	template<typename Cont,typename numberlist>
+	Cont range_with_numbers<Cont,numberlist,0>(numberlist nums){return nums;}
 }
 #endif
 #endif
