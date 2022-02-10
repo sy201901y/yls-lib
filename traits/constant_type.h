@@ -3,8 +3,9 @@
 #define CONSTANT_TYPE
 namespace syone
 {
-	struct Truetype{bool value=true;};
-	struct Falsetype{bool value=false;};
+	template<typename T,T x>struct Value{T val=x;}
+	using Truetype=Value<bool,true>;
+	using Falsetype=Value<bool,false>;
 }
 #endif
 #endif
