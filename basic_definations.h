@@ -28,10 +28,10 @@
 #define roF(i,l,r) for(int i=r;i>=l;i--)
 #ifndef ONLINE_JUDGE
 #include "basics/input.h"
-#include "optimize/range.h"
 #include "traits/constant_type.h"
 #include "traits/functional.h"
 #include "traits/issame.h"
+#include "optimize/range.h"
 #else
 #include<cstdio>
 #include<cctype>
