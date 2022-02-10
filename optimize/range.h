@@ -7,8 +7,9 @@
 #else
 namespace syone
 {
-	struct Truetype{bool value=true;};
-	struct Falsetype{bool value=false;};
+	template<typename T,T x>struct Value{T val=x;}
+	using Truetype=Value<bool,true>;
+	using Falsetype=Value<bool,false>;
 	template<typename T,typename U>struct issame:public Falsetype{};
 	template<typename T>struct issame<T,T>:public Truetype{};
 	template<typename R,typename Args...>
