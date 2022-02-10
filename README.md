@@ -7,3 +7,15 @@ you could use the code below to include my lib:
 #define SYONE_LIB
 using namespace syone;
 ```
+Structure:
+
+basics
+- input.h
+
+optimize
+- range.h
+
+traits
+- constant_type.h
+- functional.h
+- issame.h
