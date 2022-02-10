@@ -3,6 +3,7 @@
 #define RANGE
 #ifndef ONLINE_JUDGE
 #include "../traits/issame.h"
+#include "../traits/functional.h"
 #else
 namespace syone
 {
@@ -10,6 +11,8 @@ namespace syone
 	struct Falsetype{bool value=false;};
 	template<typename T,typename U>struct issame:public Falsetype{};
 	template<typename T>struct issame<T,T>:public Truetype{};
+	template<typename R,typename Args...>
+	using function_t=R(*)(Args...);
 }
 #endif
 #include <vector>
@@ -39,6 +42,11 @@ namespace syone
 	}
 	template<typename Cont,typename numberlist>
 	Cont range_with_numbers<Cont,numberlist,0>(numberlist nums){return nums;}
+	template<typename... R>
+	void for_in_range(int max,function_t<void,int,R&...> dosth,R&... args)
+	{
+		for(int P=1;P<=n;P++)dosth(i,args);
+	}
 }
 #endif
 #endif
