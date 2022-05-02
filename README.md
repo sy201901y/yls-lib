@@ -17,5 +17,5 @@ optimize
 
 traits
 - constant_type.h
-- functional.h
-- issame.h
+
+Now my aim is to recreate a <type_traits> myself in /traits.
