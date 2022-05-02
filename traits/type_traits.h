@@ -5,10 +5,12 @@
 using size_t=unsigned;
 namespace syone
 {
-  //is_array
-  template<typename T>class is_array:false_type{};
-  template<typename T>class is_array<T[]>:true_type{};
-  template<typename T,size_t N>class is_array<T[N]>:true_type{};
+	//is_array
+	template<typename T>class IsArray:FalseType{};
+	template<typename T>class IsArray<T[]>:Truetype{};
+	template<typename T,size_t N>class IsArray<T[N]>:TrueType{};
+  
+  
 }
 #endif
 #endif
